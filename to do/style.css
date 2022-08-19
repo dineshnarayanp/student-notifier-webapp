@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lemonada');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%
+}
+
+div{
+	display: block;
+	width: 400px;
+	margin: auto;
+}
+
+ul{
+	margin:0;
+	padding: 0;
+}
+
+#completed-tasks span{
+	text-decoration: line-through;
+	font-size: 1.2em !important;
+}
+.div-wrapper {
+    position: relative;;
+    height: 200px;
+    width: 200px;
+}
+
+.div-wrapper img {
+    position:bottom;
+    left: 0;
+    bottom: 0;
+}
