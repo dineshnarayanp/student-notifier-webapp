@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+h1 { color:deeppink; 
+    font-family: 'Great Vibes', cursive;
+    font-size: 100px; 
+    font-weight: normal; 
+    line-height: 48px;   
+    text-align: center;
+    margin: 60px;
+    text-shadow: 1px 1px 2px #082b34;
+     }
+     .btn {
+        border: none;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        outline: none;
+        overflow: hidden;
+        position: relative;
+        color:white ;
+        font-weight: 700;
+        font-size: 15px;
+        background-color: rgba(196, 192, 192, 0.265);
+        padding: 17px 60px;
+        margin: 0 auto;
+        box-shadow: 0 5px 15px rgba(172, 0, 77, 0.938);
+      }
+      
+      .btn span {
+        position: relative; 
+        z-index: 1;
+      }
+      
+      .btn:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 490%;
+        width: 140%;
+        background: rgb(224, 125, 178);
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+        transform: translateX(-98%) translateY(-25%) rotate(45deg);
+      }
+      
+      .btn:hover:after {
+        -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+        transform: translateX(-9%) translateY(-25%) rotate(45deg);
+      }
+      
+     
