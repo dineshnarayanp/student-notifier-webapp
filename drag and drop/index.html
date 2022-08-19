@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Drag and Drop List | Webdevtrick.com</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="style.css">
+ </head>
+<body>
+  <h1>DRAG AND DROP</h1>
+  <div class="list">
+    <input type="text" class="input" placeholder="Add items in your list"/>
+    <span class="add">+</span>
+  </div>
+  <ul>
+    <li class="draggable" draggable="true">HTML</li>
+    <li class="draggable" draggable="true">CSS</li>
+    <li class="draggable" draggable="true">JavaScript</li>
+    <li class="draggable" draggable="true">PHP</li>
+    <li class="draggable" draggable="true">MySQL</li>
+  </ul>
+ 
+  <script  src="function.js"></script>
+  <script>
+      function shownotification(){
+          const notification = new Notification("Time to attend class!",{
+              body:"hey mate!you have math class from 12:00 to 12:30",
+              icon:"http://icons.iconarchive.com/icons/alecive/flatwoken/512/Apps-Notifications-icon.png"
+          })
+          notification.onclick=(e) =>{
+              window.location.href = "https://classroom.google.com/u/0/h";
+          };
+      }
+      console.log(Notification.permission);
+      if(Notification.permission==="granted"){
+          shownotification();
+      }
+      else if(Notification.permission!=="denied"){
+          Notification.requestPermission().then(permission=>{
+            if(permission == "granted"){
+            shownotification();
+        }
+          })
+      }
+  </script>
+ 
+</body>
+</html>
